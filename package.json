@@ -1,14 +1,23 @@
 {
-  "name": "hello-world-api",
+  "name": "demo",
   "version": "1.0.0",
-  "description": "A simple API that returns 'Hello World'",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "helmet": "^7.0.0",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1"
+  }
 }
